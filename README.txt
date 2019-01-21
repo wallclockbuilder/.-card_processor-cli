@@ -1,3 +1,31 @@
 Test
 ----
 rspec ./card_processor_spec.rb
+
+Here are some sample commands and responses.
+"./card_processor.rb Add Quincy 1234567890123456 2000"
+"Quincy: error"
+"=--=-==--==-"
+"./card_processor.rb Add Tom 4111111111111111 1000"
+"Tom: 0"
+"=--=-==--==-"
+"./card_processor.rb Add Lisa 5454545454545454 3000"
+"Lisa: 0"
+"=--=-==--==-"
+"./card_processor.rb Charge Tom 500"
+"Tom: 500"
+"=--=-==--==-"
+"./card_processor.rb Charge Tom 800"
+"Tom: declined"
+"=--=-==--==-"
+"./card_processor.rb Charge Lisa 7"
+"Lisa: 7"
+"=--=-==--==-"
+"./card_processor.rb Charge Quincy 200"
+"Quincy: error"
+"=--=-==--==-"
+"./card_processor.rb Credit Lisa 100"
+"Lisa: -93"
+"=--=-==--==-"
+"./card_processor.rb Credit Quincy 200"
+"Quincy: error"
